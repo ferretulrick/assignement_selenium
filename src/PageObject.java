@@ -18,10 +18,8 @@ public class PageObject {
         this.actionBot=actionBot;
 
         System.out.println("page title: "+driver.getTitle());
-        /*
-        if (!"Login".equals(driver.getTitle())) {
-            throw new IllegalStateException("This is not the login page");
-        }
-        */
+        
+        //static test
+        assertTrue("there isn't page's title", driver.getTitle() != "");
     }
 }
